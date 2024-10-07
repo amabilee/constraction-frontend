@@ -1,0 +1,119 @@
+/* login style */
+
+.login-page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login-main-left {
+    width: 70%;
+    height: 100%;
+}
+
+.login-main-left img{
+    width: 100%;
+}
+
+.login-main-right {
+    width: 30%;
+    height: 100%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-main-right img {
+    margin: -300px 0 30px 0;
+    width: 70%;
+}
+
+.login-main-right .input-container:nth-of-type(2) {
+    margin: 20px 0 0 0;
+}
+
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 60%;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 1.5px solid #9b9b9b;
+    outline: 0;
+    font-size: 1rem;
+    color: #000;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+    font-size: 1rem;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 400;
+    border-width: 1.5px;
+    border-image: #0F2841;
+    border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #0F2841;
+    font-weight: 700;
+}
+
+.form__field:required,
+.form__field:invalid {
+    box-shadow: none;
+}
+
+.login-main-right button{
+    margin: 80px 0 0 0;
+    width: 60%;
+    height: 50px;
+    background-color: #0F2841;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 1s;
+}
+
+.login-main-right button:hover{
+    transition: all 1s;
+    background-color: #2A4F75;
+}

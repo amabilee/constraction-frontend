@@ -1,15 +1,14 @@
 import React from 'react'
-import ConstractionLogo from '../../assets/logo/constraction-white.svg'
-import PainelIcon from '../../assets/gestao/painel-icon.svg'
+import PainelIcon from '../../../assets/gestao/painel-icon.svg'
 import './style.css'
 import '../../style.css'
+
+import Header from '../../../components/base/header'
 
 function GestaoEstoqueEstoque() {
     return (
         <div className="page-container">
-            <div className="page-header">
-                <img src={ConstractionLogo} />
-            </div>
+            <Header/>
             <div className="page-content">
                 <div className="page-content-box">
                     <div className="page-content-header">

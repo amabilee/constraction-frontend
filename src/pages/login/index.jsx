@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import ConstractionLogo from '../../../public/constraction.svg'
-import Background from '../../../public/background.svg'
+import ConstractionLogo from '/constraction.svg'
+import Background from '/background.svg'
 import "./style.css";
 
 import { useNavigate } from 'react-router-dom';

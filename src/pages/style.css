@@ -30,24 +30,34 @@
     align-items: center;   
 }
 
-.page-content-header button:nth-of-type(1){
+.page-content-header button{
     width: 100px;
     height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #CEE2FE;
     border: none;
-    color: #336CE3;
     border-radius: 11px;
     padding: 0 10px;
     font-size: 15px;
     font-weight: 400;
     margin: 0 0 0 30px;
+    cursor: pointer;
 }
 
-.page-content-header button:nth-of-type(1) img{
+.page-content-header .active-button{
+    background-color: #CEE2FE;
+    color: #336CE3;
+}
+
+.page-content-header .desactive-button{
+    background-color: #D8DFE9;
+    color: #56616F;
+}
+
+.page-content-header button:nth-of-type(1) img,
+.page-content-header button:nth-of-type(2) img{
     height: 25px;
     width: 25px;
 }
